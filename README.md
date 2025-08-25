@@ -1,9 +1,13 @@
 # Projeto-Help-Desk
+
 Lider:
-     Lucas 
+     Lucas; 
 Analista requisito:
-        Luan, Guilherme, Laisa 
+        Luan, Guilherme, Laisa; 
 Front end:
-       Giulan, Patricia, Emily
+       Giulan, Patricia, Emily;
 Back end:
-       Lucas, matheus, marco
+       Lucas, matheus, marco;
+
+Links dos integrandes:
+     Lucas: 
