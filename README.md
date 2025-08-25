@@ -14,12 +14,13 @@ Links dos integrandes:
      Giulan:
      Guilherme: 
           https://github.com/guigotado;
-     Laisa:     
+     Laisa:
+          https://github.com/mennezes024;
      Lucas: 
           https://github.com/LuG-Baiao;
      Luan: 
           https://github.com/luancxsta;
-     Marcos:
+     Marco:
      Matheus: 
           https://github.com/MatheusS2027;
      Patricia: 
