@@ -7,7 +7,19 @@ Analista requisito:
 Front end:
        Giulan, Patricia, Emily;
 Back end:
-       Lucas, matheus, marco;
+       Lucas, matheus, marcos;
 
 Links dos integrandes:
+     Emily;
+     Giulan:
+     Guilherme: 
+          https://github.com/guigotado;
+     Laisa:     
      Lucas: 
+          https://github.com/LuG-Baiao;
+     Luan: 
+          https://github.com/luancxsta;
+     Marcos:
+     Matheus: 
+     Patricia: 
+     
