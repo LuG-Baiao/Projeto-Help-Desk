@@ -1,18 +1,18 @@
 # Projeto-Help-Desk
 
-Grupo: 
+## Grupo: 
      Ctrl+alt+resolve;
 
-Lider:
+## Lider:
      Lucas; 
-Analista requisito:
+## Analista requisito:
         Luan, Guilherme, Laisa; 
-Front end:
+## Front end:
        Giulan, Patricia, Emily;
-Back end:
+## Back end:
        Lucas, Matheus, Marco;
 
-Links dos integrandes:
+## Links dos integrandes:
      Emily;
      Giulan: 
           https://github.com/giulianbg;
