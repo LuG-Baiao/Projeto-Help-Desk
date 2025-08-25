@@ -1,5 +1,8 @@
 # Projeto-Help-Desk
 
+Grupo: 
+     Ctrl+alt+resolve;
+
 Lider:
      Lucas; 
 Analista requisito:
@@ -11,7 +14,8 @@ Back end:
 
 Links dos integrandes:
      Emily;
-     Giulan:
+     Giulan: 
+          https://github.com/giulianbg;
      Guilherme: 
           https://github.com/guigotado;
      Laisa:
