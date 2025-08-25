@@ -10,7 +10,7 @@ Analista requisito:
 Front end:
        Giulan, Patricia, Emily;
 Back end:
-       Lucas, matheus, marcos;
+       Lucas, Matheus, Marco;
 
 Links dos integrandes:
      Emily;
