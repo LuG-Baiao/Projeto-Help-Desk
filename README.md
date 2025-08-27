@@ -22,7 +22,7 @@
 - Marco  
 
 ##  Links dos Integrantes
-- Emily  
+- [Emily](https://github.com/Emilyaraujo20)
 - [Giulan](https://github.com/giulianbg)  
 - [Guilherme](https://github.com/guigotado)  
 - [Laisa](https://github.com/mennezes024)  
