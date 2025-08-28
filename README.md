@@ -30,4 +30,4 @@
 - [Luan](https://github.com/luancxsta)  
 - [Marco](https://github.com/Markkito12)  
 - [Matheus](https://github.com/MatheusS2027)  
-- Patricia  
+- [Patricia](https://github.com/patriciatavaresilva)  
