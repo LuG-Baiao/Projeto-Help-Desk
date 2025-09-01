@@ -1,7 +1,7 @@
 # Projeto Help Desk
 
 ##  Grupo
-**Ctrl+Alt+Resolve**
+**--**
 
 ##  Líder
 - Lucas  
