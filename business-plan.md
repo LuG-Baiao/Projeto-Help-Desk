@@ -263,7 +263,86 @@ Criar uma **plataforma web e aplicativo** para oferecer suporte técnico rápido
 - Expansão do serviço para novas regiões.  
 ---
 
-💰 6. Plano Financeiro = Marco;
+# 💰 6. Plano Financeiro – Help-Tech
+
+## 🔹 Investimentos Iniciais
+| Item                                    | Valor Estimado (R$) |
+|-----------------------------------------|----------------------|
+| Desenvolvimento da plataforma (site + app) | 80.000              |
+| Design UX/UI                             | 10.000              |
+| Servidores e hospedagem (setup inicial)  | 5.000               |
+| Licenças de software / ferramentas       | 3.000               |
+| Marketing de lançamento (ads + mídias)   | 12.000              |
+| Treinamento da equipe                    | 5.000               |
+| **Total Investimento Inicial**           | **115.000**         |
+
+---
+
+## 🔹 Custos Operacionais Mensais
+| Despesa                           | Valor Mensal (R$) |
+|-----------------------------------|-------------------|
+| Servidores em nuvem (AWS/Azure)   | 2.000             |
+| Manutenção e suporte técnico       | 4.000             |
+| Marketing digital contínuo         | 5.000             |
+| Equipe de suporte (2 técnicos)     | 8.000             |
+| Gestão/coordenação do projeto      | 6.000             |
+| Outros (impostos, taxas, SaaS)     | 2.000             |
+| **Total Operacional Mensal**       | **27.000**        |
+
+---
+
+## 🔹 Projeção de Receita
+Modelo baseado em **assinatura mensal SaaS**, com planos diferenciados para pequenas e médias assistências técnicas.
+
+| Plano | Valor Médio (R$) | Usuários Estimados (ano 1) | Receita Mensal (R$) |
+|-------|------------------|-----------------------------|----------------------|
+| Básico (até 5 usuários)  | 150                        | 50                   | 7.500                |
+| Intermediário (até 15 usuários) | 400                | 30                   | 12.000               |
+| Avançado (até 50 usuários) | 900                      | 10                   | 9.000                |
+| **Total Receita Mensal (Ano 1)** | —                  | —                   | **28.500**           |
+
+**Projeção de Crescimento:**
+- **Ano 1:** 90 clientes ativos → Receita mensal: R$ 28.500  
+- **Ano 2:** +50% clientes → Receita mensal: R$ 42.750  
+- **Ano 3:** +40% clientes → Receita mensal: R$ 59.850  
+
+---
+
+## 🔹 Ponto de Equilíbrio (Break-even)
+- **Custos fixos mensais:** R$ 27.000  
+- **Receita média por cliente:** ~R$ 320  
+- **Clientes necessários para equilíbrio:** **85 clientes ativos**  
+
+📌 Previsto atingir o ponto de equilíbrio a partir do **8º mês do Ano 1**.  
+
+---
+
+## 🔹 Retorno Esperado (ROI)
+- **Investimento inicial:** R$ 115.000  
+- **Lucro líquido projetado Ano 1:** R$ 18.000  
+- **Lucro líquido Ano 2:** ~R$ 171.000  
+- **Payback estimado:** Retorno do investimento no **2º ano de operação**.  
+
+---
+
+## 📌 Quadro de Responsabilidades – Etapas do Projeto
+| Etapa                          | Atividade Principal                          | Responsável |
+|--------------------------------|-----------------------------------------------|-------------|
+| Levantamento de requisitos      | Definição de funcionalidades e fluxos        | Gestor do Projeto |
+| Desenvolvimento da plataforma   | Programação front-end e back-end             | 2 Desenvolvedores |
+| Design e usabilidade            | Criação de telas, UX/UI                      | Designer UX/UI |
+| Testes e ajustes                | Testes funcionais e correções                | Desenvolvedores + Gestor |
+| Treinamento da equipe           | Capacitação em uso do sistema                | Gestor + Técnicos |
+| Marketing de lançamento         | Divulgação online e captação de leads        | Gestor + Marketing |
+| Operação e suporte contínuo     | Atendimento aos clientes                     | 2 Técnicos de Suporte |
+| Monitoramento financeiro        | Controle de receitas e despesas              | Gestor do Projeto |
+
+---
+
+✅ O **Help-Tech** é financeiramente viável, com retorno previsto a partir do 2º ano e break-even no 1º ano.  
+O sucesso depende principalmente de **estratégias de marketing eficazes** e da **adesão rápida de clientes**.
+
+
 ---
 
 # ⚠️ Cenários de Risco – Help Desk
