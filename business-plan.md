@@ -43,62 +43,73 @@ Enquanto muitos CRMs são genéricos (voltados para vendas, marketing ou gestão
 - O diferencial não é apenas gerenciar solicitações, mas manter o cliente informado e satisfeito.  
 - Esse foco na experiência do usuário é algo que muitos CRMs não oferecem.
 
-# 📊 Análise de Mercado
+# 📊 Análise de Mercado – Help Tech CRM
 
-## Segmento
-- Analisar o tamanho do mercado  
+## 🔹 Segmento
+O mercado de **assistência técnica** (eletrônicos, celulares, informática, eletrodomésticos) enfrenta desafios crescentes de organização, comunicação com clientes e acompanhamento de serviços.  
+Grande parte ainda utiliza controles manuais (planilhas, papel, WhatsApp), o que gera falhas, retrabalho e perda de confiança do cliente.  
 
----
-
-## Tendência do Setor
-O setor de **CRM e ERP em nuvem (SaaS)** está em forte expansão, principalmente entre **pequenas e médias empresas**, que buscam digitalizar processos e melhorar o relacionamento com clientes.  
-
-Segundo relatórios globais de mercado, o setor de **CRM cresce em média 12% ao ano**, impulsionado por demandas de **automação, experiência do cliente e atendimento digital**.  
+Nesse contexto, há uma demanda clara por **sistemas especializados** que centralizem solicitações, melhorem a gestão de ordens de serviço (OS) e ampliem a transparência com o cliente.
 
 ---
 
-## Concorrentes Diretos
-- **Sige Cloud**: ERP para assistência técnica – OS por assinatura, controle de técnicos, emissão automática de OS e envio de e-mails.  
-- **AssistênciaPro**: Controle completo de equipamentos, ordens de serviço, emissão de NFS-e, comunicação via WhatsApp.  
+## 🔹 Tendência do Setor
+O setor de **CRM e ERP em nuvem (SaaS)** está em forte expansão, especialmente entre **pequenas e médias empresas de assistência técnica**, que buscam digitalizar processos e entregar uma experiência de atendimento mais profissional.  
+
+Segundo relatórios globais, o mercado de CRM cresce em média **12% ao ano**, impulsionado pela necessidade de:  
+- Automação de fluxos de atendimento;  
+- Melhoria da experiência do cliente;  
+- Comunicação digital em tempo real;  
+- Atendimento mais ágil e integrado.  
+
+Na assistência técnica, essa tendência se traduz em:  
+✔️ Gestão eficiente de OS  
+✔️ Notificações automáticas  
+✔️ Acompanhamento transparente para o cliente  
 
 ---
 
-## Concorrentes Indiretos (foco em atendimento ao cliente)
+## 🔹 Concorrentes Diretos
+- **Sige Cloud** → ERP com foco em assistência, inclui emissão automática de OS e e-mails.  
+- **AssistênciaPro** → Sistema de controle de equipamentos, ordens de serviço, NFS-e e comunicação via WhatsApp.  
+
+---
+
+## 🔹 Concorrentes Indiretos (Atendimento ao Cliente)
 - **Octadesk, Movidesk, Freshdesk, Zendesk, HubSpot Service Hub, Salesforce Service Cloud**  
-Essas soluções incluem recursos como **gestão de tickets, automação, chatbots, relatórios e portais de atendimento**.  
+Essas soluções oferecem gestão de tickets, automação, chatbots e relatórios, porém são **genéricas** e não atendem às particularidades da **assistência técnica** (ex.: controle de peças, técnicos, equipamentos e etapas de reparo).  
 
 ---
 
-## Perfil do Cliente Ideal – *Help-Tech CRM*
+## 🔹 Perfil do Cliente Ideal – Help Tech CRM
+**Pequenas e médias assistências técnicas**, que:  
+- Têm entre **3 e 50 colaboradores**;  
+- Lidam com **20 a 300 ordens de serviço por mês**;  
+- Precisam organizar processos e melhorar comunicação com clientes;  
+- Desejam reduzir dependência de papel, planilhas e WhatsApp para controle interno.  
 
-### Pequenas e Médias Empresas (PMEs)
-- 3 a 50 colaboradores.  
-- Volume mensal de 20 a 300 ordens de serviço.  
-- Estrutura em crescimento, mas ainda com dificuldade em organizar processos e comunicação.  
+Também pode atender segmentos próximos, como:  
+- **Clínicas** (gestão de atendimentos);  
+- **E-commerce de manutenção/reparo**.  
 
-### Clínicas
-- Consultas e procedimentos ambulatoriais, sem estrutura hospitalar.  
-- Equipe pequena (1 a 10 profissionais de saúde – médicos, dentistas, psicólogos).  
-- Atendimento local ou híbrido (presencial ou teleatendimento).  
-
-### E-commerce
-- Faturamento geralmente até **R$ 50 mil/mês**.  
-- Estrutura reduzida: 1 a 5 pessoas cuidando de vendas, atendimento, logística e produção.  
-- Forte dependência de redes sociais (Instagram, WhatsApp) para vendas.  
+Mas o **foco central** é assistência técnica.  
 
 ---
 
-## Oportunidades
-- **Digitalização acelerada das PMEs**: Pequenas empresas estão abandonando papel e planilhas, migrando para soluções em nuvem (SaaS).  
-- **Valorização da experiência do cliente**: Clientes querem acompanhar status de pedidos, serviços ou consultas em tempo real.  
-- **Acessibilidade e inclusão digital**: Soluções com foco em acessibilidade (voz, leitura em tela, notificações adaptadas) podem ser um diferencial competitivo.  
+## 🔹 Oportunidades
+- **Digitalização acelerada** das assistências técnicas → migração de planilhas/papel para sistemas SaaS.  
+- **Valorização da experiência do cliente** → acompanhamento do status em tempo real.  
+- **Especialização** → poucos CRMs realmente desenvolvidos para assistência técnica.  
+- **Inclusão digital** → soluções acessíveis (voz, leitura em tela, notificações adaptadas).  
 
 ---
 
-## Ameaças
-- **Concorrência com grandes CRMs e ERPs**: Salesforce, Zoho, HubSpot, Zendesk e nacionais como Omie e Sige Cloud, que têm mais recursos e grande orçamento de marketing.  
-- **Concorrência com soluções gratuitas ou baratas**: Planilhas, Trello, Asana, Google Workspace e WhatsApp Business ainda suprem parte das necessidades das PMEs.  
-- **Baixa maturidade digital em pequenas empresas**: Muitos negócios ainda não compreendem a importância de investir em gestão digital.  
+## 🔹 Ameaças
+- **Concorrência com grandes CRMs/ERPs** (Salesforce, Zoho, HubSpot, Omie, Sige Cloud).  
+- **Soluções gratuitas ou baratas** (planilhas, Trello, WhatsApp Business, Google Workspace).  
+- **Baixa maturidade digital** em pequenas assistências → resistência ao investimento em tecnologia.  
+
+---
 
 # 🚀 Help-Tech CRM
 
@@ -250,8 +261,10 @@ Criar uma **plataforma web e aplicativo** para oferecer suporte técnico rápido
 - Plataforma funcional e confiável para suporte técnico.  
 - Melhoria no acesso à tecnologia para pessoas e pequenas empresas.  
 - Expansão do serviço para novas regiões.  
+---
 
 💰 6. Plano Financeiro = Marco;
+---
 
 # ⚠️ Cenários de Risco – Help Desk
 
