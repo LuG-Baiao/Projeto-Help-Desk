@@ -1,7 +1,7 @@
 # Projeto Help Desk
 
 ##  Grupo 1
-** Atendimento ao Cliente (Help Desk)**
+**Atendimento ao Cliente (Help Desk)**
 
 ##  Líder
 - Lucas Baião
