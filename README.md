@@ -1,10 +1,10 @@
 # Projeto Help Desk
 
-##  Grupo
-**1**
+##  Grupo 1
+** Atendimento ao Cliente (Help Desk)**
 
 ##  Líder
-- Lucas  
+- Lucas Baião
 
 ##  Analistas de Requisitos
 - Luan  
@@ -17,7 +17,7 @@
 - Emily  
 
 ##  Back-end
-- Lucas  
+- Lucas Baião
 - Matheus  
 - Marco  
 
