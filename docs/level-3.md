@@ -13,14 +13,18 @@ Os Clientes acessam o sistema por meio do Aplicativo Mobile, enquanto Atendentes
 ```mermaid
 graph TD
 
- 
 API[API REST]
-API -->|Autenticação| Auth[Componente de Autenticação]
-API -->|Cadastro de Clientes| Clientes[Componente de Cadastro de Clientes]
-API -->|Gestão de Tickets| Tickets[Componente de Gestão de Tickets]
-API -->|Notificações| Notif[Componente de Notificações]
 
-API -->|CRUD Dados| DB[Banco de Dados Relacional]
+API --> Auth[Componente de Autenticação]
+API --> Clientes[Componente de Cadastro de Clientes]
+API --> Tickets[Componente de Gestão de Tickets]
+API --> Notif[Componente de Notificações]
 
-Notif -->|Envia notificações| Email[Servidor de Email SMTP]
+Auth --> DB[(Banco de Dados Relacional)]
+Clientes --> DB
+Tickets --> DB
+
+Notif --> SMTP[Servidor de Email SMTP]
+
+
 
