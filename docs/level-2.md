@@ -16,8 +16,9 @@ Mobile-->|Faz requisição| API[API REST]
 
 SPA-->|Faz requisição|API
 
-API-->|CRUD Dados|DB[Banco de dados Relacional]
+API-->|CRUD Dados|DB[(Banco de dados Relacional)]
 
-API-->|Envia Notificações|Email[SMT]
+API-->|Envia Notificações|Email[SMTP]
+
 
 
