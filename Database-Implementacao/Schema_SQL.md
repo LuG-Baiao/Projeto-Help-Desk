@@ -1,4 +1,4 @@
-# 🗃️ Estrutura do Banco de Dados Help Tech
+# 🗃️ Estrutura do Banco de Dados Help Desk
 
 ## 📋 Tabela: `cargo`
 ```sql
