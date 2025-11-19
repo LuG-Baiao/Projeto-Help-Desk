@@ -1,0 +1,22 @@
+import { Sequelize } from "sequelize";
+
+// db/connection.js
+const sequelize = new Sequelize( 
+    "projeto_inclusão_social",
+    "Root",
+    "Luc@s2002",
+    {
+        host: "localhost",
+        dialect: "mysql",
+    }
+);
+
+sequelize.authenticate().theh((function(){
+    console.log("Conexão com o banco de dados realizada com sucesso.")
+})).catch((function(erro){
+    console.log("Não foi possível conectar ao banco de dados: "+ erro)
+}));
+module.exports = {
+    Sequelize: Sequelize,
+    sequelize: sequelize
+}

@@ -1,0 +1,70 @@
+const pool = require(".db");
+
+
+exports.create = async (req, res) => {
+try {
+const { nome, email, telefone, tipo_deficiencia, regiao } = req.body;
+const [result] = await pool.execute(
+'INSERT INTO usuarios (nome, email, telefone, tipo_deficiencia, regiao) VALUES (?,?,?,?,?)',
+[nome, email, telefone, tipo_deficiencia, regiao]
+);
+res.status(201).json({ id: result.insertId, message: 'Usuário criado' });
+} catch (err) {
+console.error(err);
+res.status(500).json({ error: 'Erro ao criar usuário' });
+}
+};
+
+
+exports.findAll = async (req, res) => {
+try {
+const [rows] = await pool.execute('SELECT * FROM usuarios');
+res.json(rows);
+} catch (err) {
+console.error(err);
+res.status(500).json({ error: 'Erro ao buscar usuários' });
+}
+};
+
+
+exports.findOne = async (req, res) => {
+try {
+const { id } = req.params;
+const [rows] = await pool.execute('SELECT * FROM usuarios WHERE id = ?', [id]);
+if (rows.length === 0) return res.status(404).json({ error: 'Usuário não encontrado' });
+res.json(rows[0]);
+} catch (err) {
+console.error(err);
+res.status(500).json({ error: 'Erro ao buscar usuário' });
+}
+};
+
+
+exports.update = async (req, res) => {
+try {
+const { id } = req.params;
+const { nome, email, telefone, tipo_deficiencia, regiao } = req.body;
+const [result] = await pool.execute(
+'UPDATE usuarios SET nome=?, email=?, telefone=?, tipo_deficiencia=?, regiao=? WHERE id=?',
+[nome, email, telefone, tipo_deficiencia, regiao, id]
+);
+if (result.affectedRows === 0) return res.status(404).json({ error: 'Usuário não encontrado' });
+res.json({ message: 'Usuário atualizado' });
+} catch (err) {
+console.error(err);
+res.status(500).json({ error: 'Erro ao atualizar usuário' });
+}
+};
+
+
+exports.remove = async (req, res) => {
+try {
+const { id } = req.params;
+const [result] = await pool.execute('DELETE FROM usuarios WHERE id=?', [id]);
+if (result.affectedRows === 0) return res.status(404).json({ error: 'Usuário não encontrado' });
+res.json({ message: 'Usuário removido' });
+} catch (err) {
+console.error(err);
+res.status(500).json({ error: 'Erro ao remover usuário' });
+}
+};  
