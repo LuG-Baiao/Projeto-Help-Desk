@@ -16,7 +16,15 @@ const Funcionario = db.sequelize.define('funcionario', {
         allowNull: true
     },
     data_admissao: {
-        type: db.Sequelize.DATE,
+        type: db.Sequelize.DATEONLY,
+        allowNull: true
+    },
+    senha: {
+        type: db.Sequelize.STRING,
+        allowNull: false
+    },
+    usuario: {
+        type: db.Sequelize.STRING,
         allowNull: true
     }
 }, {

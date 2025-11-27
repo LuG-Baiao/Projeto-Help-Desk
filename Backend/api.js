@@ -14,6 +14,9 @@ const bodyParser = require("body-parser")
 const Funcionarios = require("./db/funcionario"); //importando  arquivo funcionarios
 const Cargo = require("./db/cargo"); //importando cargo
 const conexao = require("./db/connection");
+const cors = require("cors")
+app.use(cors())
+
 
 //CONFIGURANDO BODY PARSE
 app.use(bodyParser.urlencoded({extended: false}));
@@ -24,20 +27,23 @@ app.post("/cad_func", function(req,res){
       Funcionarios.create({
       id_funcionario: req.body.id_funcionario,
       nome: req.body.nome,
-      id_cargo: req.body.id_cargo,
-      data_admissao: req.body.data_admissao
+      id_cargo: Number(req.body.cargo),
+      data_admissao: req.body.data_admissao,
+      usuario: req.body.usuario,
+      senha: req.body.senha
     }).then(function(){
-        res.send("Cargo cadastrado com sucesso!");
+        res.status(200).json({message: "Funcionario cadastro com sucesso"});
     }).catch(function(erro){
-        res.send("Erro ao cadastrar o cargo" + erro);
-})
+        console.error(erro);
+        res.status(500).json({message: "Erro ao cadastrar funcionario" + erro})
+});
 });
 
 //LENDO OS CARGOS
 
 app.get("/list_cargo", function(re,res){
   Cargo.findAll({
-    attributes:['nome']
+    //attributes:['nome']
   }).then(function(cargo){
     res.send({cargo: cargo})
   }).catch(function(erro){
@@ -96,3 +102,39 @@ join status_servico ss on ss.id_status  =s.id_status
 app.listen(3000,function(){
   console.log("Servidor Rodando")
 })
+
+
+
+// Criando Rota de Login
+
+app.post("/login", async (req, res) => {
+    const { usuario: usuarioFront, senha } = req.body;
+
+    try {
+        // Buscar o usuário no banco pelo campo 'usuario'
+        const usuario = await Funcionarios.findOne({
+            where: { usuario: usuarioFront }
+        });
+
+        if (!usuario) {
+            return res.status(400).json({ erro: "Usuário não encontrado" });
+        }
+
+        // Comparar a senha digitada com a senha do banco
+        if (senha !== usuario.senha) {
+            return res.status(401).json({ erro: "Senha incorreta" });
+        }
+
+        return res.json({
+            mensagem: "Login realizado com sucesso!",
+            usuario: {
+                id: usuario.id_usuario,
+                nome: usuario.nome
+            }
+        });
+
+    } catch (erro) {
+        console.log(erro);
+        return res.status(500).json({ erro: "Erro no servidor" });
+    }
+});

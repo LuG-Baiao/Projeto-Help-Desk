@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário e Cargo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .topo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .titulo-bar {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .input-busca {
+            margin: 20px 0;
+            padding: 5px;
+            width: 300px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #7c87ae;
+        }
+
+        input[type="text"], input[type="date"], input[type="password"], select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topo">
+        <img src="img/logo.png" class="logo">
+        <h2>HELP TECH</h2>
+    </div>
+
+    <div class="titulo-bar">Cadastro de Funcionário</div>
+
+    
+
+  <form id="form-funcionarios">
+        <table>
+            <thead>
+                <tr>
+                    <th>Número Cadastro</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Data Admissão</th>
+                    <th>Usuário</th>
+                    <th>Senha</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                <tr>
+                    <td><input type="text" placeholder="Ex: 001" name="id_funcionario"></td>
+                    <td><input type="text" placeholder="Nome do funcionário" name="nome"></td>
+                    <td>
+                        <select name="cargo"></select> <!-- preenchido pelo JS -->
+                    </td>
+                    <td><input type="date" name="data_admissao" required></td>
+                    <td><input type="text" placeholder="Usuário" name="usuario"></td>
+                    <td><input type="password" placeholder="Senha" name="senha"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="adicionarLinha()">Adicionar Funcionário</button>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <!-- Integração com JS -->
+    <script src="js/funcionario.js"></script>
+
+</body>
+</html>
