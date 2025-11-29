@@ -8,6 +8,7 @@ const sequelize = new Sequelize(
     {
         host: "phpmyadmin.uni9.marize.us",
         dialect: "mysql",
+        timezone: "-03:00",
     }
 );
 

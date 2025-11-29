@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviço</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .topo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .titulo-bar {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #7c87ae;
+            text-align: left;
+        }
+
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 6px 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+        <img src="img/logo.png" class="logo">
+        <h2>HELP TECH</h2>
+    </div>
+
+    <div class="titulo-bar">Cadastro de Serviço</div>
+
+    <form id="form-servico" onsubmit="event.preventDefault(); enviar();">
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>CPF do Cliente</th>
+                    <th>Responsável</th>
+                    <th>Tipo de Serviço</th>
+                </tr>
+            </thead>
+
+            <tbody id="linha-servico">
+                <tr>
+                    <td><textarea id="descricao"  placeholder="Descreva o serviço..."></textarea></td>
+
+                    <td><input type="text" id="cpf_cliente"  placeholder="Digite o CPF..."></td>
+
+                    <td>
+                        <select id="responsavel" ></select>
+                    </td>
+
+                    <td>
+                        <select id="tipo_servico" ></select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit">Salvar Serviço</button>
+    </form>
+
+    <script src="js/cad_solicitacao.js"></script>
+
+</body>
+</html>

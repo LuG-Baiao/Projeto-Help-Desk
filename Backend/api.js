@@ -13,6 +13,10 @@ const port = 3000;
 const bodyParser = require("body-parser")
 const Funcionarios = require("./db/funcionario"); //importando  arquivo funcionarios
 const Cargo = require("./db/cargo"); //importando cargo
+const Status = require("./db/status_servico") // importando status
+const Clientes =require("./db/cliente") // importando clientes
+const tp_Servico = require("./db/tipo_servico") // importando tipo_servico
+const Solicitacoes = require("./db/solicitacao") // importando solitacao
 const conexao = require("./db/connection");
 const cors = require("cors")
 app.use(cors())
@@ -137,4 +141,83 @@ app.post("/login", async (req, res) => {
         console.log(erro);
         return res.status(500).json({ erro: "Erro no servidor" });
     }
+});
+
+// listando status
+
+app.get("/Status", function(re,res){
+  Status.findAll({
+    
+  }).then(function(status){
+    res.send({status: status})
+  }).catch(function(erro){
+        res.send("Erro ao buscar estatus" + erro);
+  })
+});
+
+//listando serviços
+app.get("/tp_servico", function(re,res){
+  tp_Servico.findAll({
+  }).then(function(servico){
+    res.send({servico: servico})
+  }).catch(function(erro){
+        res.send("Erro ao buscar estatus" + erro);
+  })
+});
+
+//listando clientes
+app.get("/busca_cliente/:cpf", async function(req, res) {
+  try {
+    const cpf = req.params.cpf;
+
+    const cliente = await Clientes.findOne({
+      where: { cpf_cnpj: cpf },
+      attributes: ["id_cliente", "cpf_cnpj", "nome"]
+    });
+
+    if (!cliente) {
+      return res.status(404).json({ message: "Cliente não encontrado" });
+    }
+
+    res.status(200).json(cliente);
+
+  } catch (erro) {
+    console.error(erro);
+    res.status(500).json({ message: "Erro ao buscar cliente: " + erro });
+  }
+});
+
+//cadastrando servico
+
+app.post("/cria_solicit", function(req,res){
+      console.log("body recebido",req.body);
+      Solicitacoes.create({
+      //data_solicitacao: req.body.data_solicitacao,
+      descricao_solicit: req.body.descricao_solicit,
+      id_status: req.body.id_status,
+      id_cliente: req.body.id_cliente,
+      id_funcionario: req.body.id_funcionario,
+      id_tipo_servico: req.body.id_tipo_servico
+    }).then(function(solicitacao){
+        res.status(200).json({message: "solicitação criada com sucesso",
+          id_solicitacao: solicitacao.id_solicitacao
+        });
+    }).catch(function(erro){
+        console.error(erro);
+        res.status(500).json({message: "Erro ao criar solicitacao" + erro}
+        
+        )
+});
+});
+
+// lista funcionarios
+
+app.get("/lista_funcionarios", function(re,res){
+  Funcionarios.findAll({
+    attributes:['id_funcionario','nome']
+  }).then(function(funcionarios){
+    res.send({funcionarios: funcionarios})
+  }).catch(function(erro){
+        res.send("Erro ao buscar estatus" + erro);
+  })
 });
