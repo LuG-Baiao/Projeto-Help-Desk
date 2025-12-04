@@ -382,3 +382,14 @@ app.post("/cad_cliente", function(req,res){
         )
 });
 });
+
+//deletar serviço
+
+
+app.delete("/delete_solicitacao/:id_solicitacao",function(req,res){
+  Solicitacoes.destroy({where: {"id_solicitacao": req.params.id_solicitacao}}).then(function(){
+    res.send("solcitacao de serviço deletado com sucesso");
+  }).catch (function(erro){
+        res.send("Erro ao deletar solicitacao" + erro);
+  });
+});

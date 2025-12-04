@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Solicitação</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .topo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .titulo-bar {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .form-box {
+            margin-top: 20px;
+            padding: 20px;
+            width: 350px;
+            border: 1px solid #999;
+            border-radius: 6px;
+            background-color: #f7f7f7;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        .btn-excluir {
+            width: 100%;
+            padding: 10px;
+            background-color: #b44646;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-excluir:hover {
+            background-color: #9d3d3d;
+        }
+
+        .btn-voltar {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: #7c87ae;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-voltar:hover {
+            background-color: #6a7496;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+        <img src="img/logo.png" class="logo">
+        <h2>HELP TECH</h2>
+    </div>
+
+    <div class="titulo-bar">Excluir Solicitação</div>
+
+    <div class="form-box">
+        <label>ID da Solicitação:</label>
+        <input type="number" id="id_solicitacao" placeholder="Digite o ID da solicitação">
+
+        <button class="btn-excluir" onclick="excluirSolicitacao()">
+            Excluir Solicitação
+        </button>
+
+        <button class="btn-voltar" onclick="window.location.href='lista_solicitacoes.html'">
+            Voltar
+        </button>
+    </div>
+
+    <!-- Arquivo JS separado -->
+    <script src="js/excluir_solicitacao.js"></script>
+
+</body>
+</html>
