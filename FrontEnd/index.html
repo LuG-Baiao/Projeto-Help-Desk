@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - HELP TECH</title>
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,12 +15,20 @@
 
     <div class="topo">
         <img src="img/logo.png" class="logo">
-        <h2>HELP TECH</h2>
+        <!--h2>HELP TECH</h2-->
     </div>
 
     <div class="caixa-lista" style="max-width:400px; margin:auto;">
-        <input type="text" id="login" placeholder="Login" class="input-busca">
-        <input type="password" id="senha" placeholder="Senha" class="input-busca">
+
+        <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="login" placeholder="Login" class="input-busca">
+        </div>
+
+        <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" placeholder="Senha" class="input-busca">
+        </div>
 
         <div class="botao" onclick="logar()">Entrar</div>
     </div>

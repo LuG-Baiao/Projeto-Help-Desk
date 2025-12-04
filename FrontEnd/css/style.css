@@ -60,4 +60,29 @@ body {
     border-radius: 8px;
     border: none;
     display: block;
+    box-sizing: border-box;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+}
+
+.input-container .input-busca {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }

@@ -7,7 +7,7 @@ const Solicitacao = db.sequelize.define('solicitacao',{
         primaryKey: true,
         autoIncrement: true
     },
-    data_solicitacao: {
+    data_solcitacao: {
         type: db.Sequelize.DATE,
         
     },

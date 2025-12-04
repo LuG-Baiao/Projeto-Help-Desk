@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+    <title>Serviços</title>
     <link rel="stylesheet" href="css/style.css">
 
     <style>
@@ -28,14 +28,6 @@
             font-weight: bold;
         }
 
-        .input-busca {
-            margin-top: 15px;
-            padding: 8px;
-            width: 300px;
-            border: 1px solid #999;
-            border-radius: 4px;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -50,7 +42,23 @@
         th {
             background-color: #7c87ae;
             text-align: left;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            background: #7c87ae;
             color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #5e688a;
+        }
+
+        select {
+            padding: 5px;
+            width: 100%;
         }
     </style>
 </head>
@@ -62,31 +70,26 @@
         <h2>HELP TECH</h2>
     </div>
 
-    <div class="titulo-bar">Clientes</div>
- <div class="titulo-bar">Clientes</div>
+    <div class="titulo-bar">Serviços Cadastrados</div>
 
-    <!-- Botão que leva para a página de cadastro -->
-    <button class="btn-cadastro" onclick="window.location.href='cad_cliente.html'">
-        Cadastrar Cliente
-    </button>
-
-    <input class="input-busca" placeholder="Buscar Cliente">
-
-    <table id="tabela-clientes">
+    <table id="tabela-servicos">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>CPF</th>
+                <th>Descrição</th>
+                <th>Cliente</th>
+                <th>Email Cliente</th>
+                <th>Contato</th>
+                <th>Responsável</th>
+                <th>Tipo Serviço</th>
+                <th>Status Atual</th>
+                <th>Alterar Status</th>
+                <th>Ação</th>
             </tr>
         </thead>
-        <tbody>
-            <!-- preenchido pelo JS -->
-        </tbody>
+        <tbody></tbody>
     </table>
 
-    <script src="js/clientes.js"></script>
+    <script src="js/servicos.js"></script>
 </body>
 </html>

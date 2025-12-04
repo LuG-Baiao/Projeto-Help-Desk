@@ -4,7 +4,8 @@ const Cliente = db.sequelize.define('cliente',{
     id_cliente:{
         type: db.Sequelize.INTEGER,
         allowNull:false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement:true
     },
     nome: {
         type: db.Sequelize.STRING,
